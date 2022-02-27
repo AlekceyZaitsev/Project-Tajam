@@ -182,10 +182,25 @@ h1, h2, h3, h4, h5, h6 {
   .header-top-menu-list li {
     display: none;
   }
-  .header-top-menu-burger {
+  .header-top-menu-burger span {
+    display: inline-block;
+  }
+  .header-top-menu-burger__icon {
     width: 30px;
-    height: 30px;
-    background: black;
+    height: 2px;
+    background: #fff;
+  }
+  .header-top-menu-burger__icon::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
+  }
+  .header-top-menu-burger__icon::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
   }
   .header-bottom {
     padding: 0 20px 0;
