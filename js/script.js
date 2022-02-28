@@ -2,30 +2,23 @@
 
 //------------------------Burger Header-------------------------------------
 
-const burgerHeader = document.querySelector('.header-top-menu-list');
 
-document.addEventListener("click", headerAddClass);
+const headerTop = document.querySelector('.header-top');
+const addClassBurgerHeader = document.querySelector('.header-top-menu-burger__icon');
 
-function headerAddClass(event) {
+function addClassToHeader(event) {
 
-    if (event.target.closest('.header-top-burger')) {
-        burgerHeader.classList.toggle('_active');
+    if (event.target.closest('.header-top-menu-burger__icon')) {
+        addClassBurgerHeader.classList.toggle('_active');
     }
 
     if (!event.target.closest('.header-top')) {
-        burgerHeader.classList.remove('_active');
+        addClassBurgerHeader.classList.remove('_active');
     }
-    
 
 }
 
+document.addEventListener('click', addClassToHeader);
+
+
 //-------------------------------------------------------------------------
-
-
-//Test Field------------------------------------------------------------
-
-
-
-
-
-//--------------------------------------------------------------------------------
